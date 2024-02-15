@@ -2,32 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html {
+    /* font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji'; */
+    font-family: 'Roboto', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.fadeIn {
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.hoverEffect {
+    transition: transform ease 1s;
+}
+.hoverEffect:hover {
+    transform: scale(1.05);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/**HOMEPAGE*/
+.general__image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.general__image--smooth::after {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.homepage__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.portfolioTwoColums__grid {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 2.5rem;
+}
+
+.homepageThree__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.homePageResponsive__grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+    gap: 2.5rem;
+}
+
+@media screen and (max-width: 1238px) {
+    .homePageResponsive__grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    }
+}
+
+.portfolioPageResponsive__grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 390px 390px;
+    /* grid-template-columns: repeat(auto-fit, minmax(100px, 360px)); */
+    gap: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .portfolioPageResponsive__grid {
+        grid-template-columns: 1fr;
+    }
 }
