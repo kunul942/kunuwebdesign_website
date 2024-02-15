@@ -61,7 +61,7 @@ import jonatanPortfolioHome4 from './PortfolioPage/kunuPortfolio/kunuPortfolioHo
 import jonatanPortfolioHome5 from './PortfolioPage/kunuPortfolio/kunuPortfolioHome5.png';
 import jonatanPortfolioHome6 from './PortfolioPage/kunuPortfolio/kunuPortfolioHome6.png';
 
-import tsksCalendarDevices from './PortfolioPage/tsksCalendar/TsksCalendardEVICES.png';
+import tsksCalendarDevices from './PortfolioPage/tsksCalendar/TsksCalendarDevices.png';
 import tsksCalendarHome1 from './PortfolioPage/tsksCalendar/TsksCalendarHome1.png';
 import tsksCalendarHome2 from './PortfolioPage/tsksCalendar/TsksCalendarHome2.png';
 import tsksCalendarHome3 from './PortfolioPage/tsksCalendar/TsksCalendarHome3.png';
