@@ -7,6 +7,13 @@ import { MyTextInput } from './MyTextInput';
 import * as Yup from 'yup';
 import { MyTextArea } from './MyTextArea';
 
+const INITIAL_VALUE = {
+    name: '',
+    email: '',
+    contactDetails: '',
+    projectDetails: '',
+};
+
 export const ContactForm = () => {
     const [loading, setLoading] = useState(false);
     //template_k9p5aje
@@ -57,12 +64,7 @@ export const ContactForm = () => {
 
     return (
         <Formik
-            initialValues={{
-                name: '',
-                email: '',
-                contactDetails: '',
-                projectDetails: '',
-            }}
+            initialValues={INITIAL_VALUE}
             onSubmit={onSubmitForm}
             validationSchema={Yup.object({
                 name: Yup.string()
