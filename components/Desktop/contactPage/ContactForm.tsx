@@ -16,9 +16,6 @@ const INITIAL_VALUE = {
 
 export const ContactForm = () => {
     const [loading, setLoading] = useState(false);
-    //template_k9p5aje
-    //service_7uosecb
-    //Hd8K1Fz9hRvUFyOMQ
 
     const onSubmitForm = (value: any, { resetForm }: any) => {
         setLoading(true);
@@ -82,7 +79,7 @@ export const ContactForm = () => {
             {(formik) => (
                 <Form noValidate>
                     <h2 className='text-xl xl:text-2xl text-gray-500 font-bold mb-8'>
-                        Let's discuss your project
+                        Let&apos;s discuss your project
                     </h2>
                     <MyTextInput name='name' placeholder='Your name' />
                     <MyTextInput name='email' type='email' placeholder='Your email' />
