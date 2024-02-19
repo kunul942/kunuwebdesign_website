@@ -438,7 +438,7 @@ export const SocialMedia = [
     {
         id: 'facebook',
         img: facebook,
-        link: 'https://www.instagram.com/kunuwebdesign/',
+        link: 'https://www.facebook.com/kunuwebdesign28/',
     },
     {
         id: 'instagram',
@@ -448,7 +448,7 @@ export const SocialMedia = [
     {
         id: 'tiktok',
         img: tiktok,
-        link: 'https://www.instagram.com/kunuwebdesign/',
+        link: 'https://www.tiktok.com/@kunuwebdesign0?_t=8k1UpwiRZnp&_r=1/',
     },
     // {
     //     id: 'whatsapp',
