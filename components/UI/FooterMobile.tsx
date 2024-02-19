@@ -36,7 +36,7 @@ export const FooterMobile = () => {
     };
 
     return (
-        <div data-aos={fadeIn}>
+        <div>
             <div className='md:hidden'>
                 <div className='mt-20 mb-10'>
                     <div className='mt-32'>

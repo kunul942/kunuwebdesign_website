@@ -37,7 +37,7 @@ export const Footer = () => {
     };
 
     return (
-        <div data-aos={fadeIn}>
+        <div>
             <div className='hidden md:block'>
                 <div className='mt-20 mb-10'>
                     <div className='mt-32'>
