@@ -15,7 +15,7 @@ export const HomePageMobile = () => {
     const { fadeDown, fadeIn } = useAnimations();
 
     return (
-        <LayoutMobile title='Kunu | Web Design'>
+        <LayoutMobile title='Kunu Web Design'>
             <div className='md:hidden'>
                 {!menu ? (
                     <>

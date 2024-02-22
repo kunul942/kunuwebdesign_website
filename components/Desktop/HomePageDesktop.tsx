@@ -5,7 +5,7 @@ import { AboutHomePage, MainImageHomePage, ProjectsHomePage, ServicesHomePage } 
 export const HomePageDesktop = () => {
     const { fadeDown, fadeIn } = useAnimations();
     return (
-        <Layout title='Kunu | Web Design'>
+        <Layout title='Kunu Web Design'>
             <div className='hidden md:block'>
                 <div data-aos={fadeDown}>
                     <MainImageHomePage />
